@@ -1,7 +1,7 @@
 let resumeData = {
     "imagebaseurl":"https://media-exp1.licdn.com/dms/image/D4D35AQE3c3zL_D2CcA/profile-framedphoto-shrink_200_200/0/1656709246175?e=1662195600&v=beta&t=bFEOmxisJDCbunltwoLc7KNzZ1Wo0stDVTdft8fojjs",
-    "name": "S.Anwar Khan",
-    "role": "Web Developer",
+    "name": "Syed Anwar",
+    "role": "Software Developer",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
     "roleDescription": "I like dabbling in various parts of software development and like to learn about new technologies and play sports in my free time.",
