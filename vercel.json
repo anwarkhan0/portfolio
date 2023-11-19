@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "next index",
+    "buildCommand": "node index",
     "builds": [
       {
         "src": "api/*.js"
