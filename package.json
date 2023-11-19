@@ -4,7 +4,7 @@
   "description": "my personal application for portfolio and other uses.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon node index.js"
+    "start": "node index.js"
   },
   "author": "anwar",
   "license": "ISC",
