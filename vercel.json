@@ -3,7 +3,7 @@
     "buildCommand": "node index",
     "builds": [
       {
-        "src": "api/*.js"
+        "src": "!"
       }
     ]
   }
