@@ -31,9 +31,9 @@ class App extends Component {
             }
           />
           <Route path="/update-resume" element={
-            <div className="App">
+            
               <UpdateResume />
-            </div>
+            
           } />
         </Routes>
       </Router>
