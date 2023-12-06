@@ -59,6 +59,16 @@ const ResumeForm = () => {
       </label>;
   })
 
+   let portfolio = resumeData.portfolio.map((el) => {
+    return <label className="block mb-4">
+        <span className="text-gray-700">{el.name}:</span>
+        <input type="hidden" value={el.name} name={el.name} />
+        <input type="text" value={el.name} name={el.name} />
+        <input type="text" value={el.imgurl} name="imgurl" />
+        <textarea type="text" name="description" value={el.description} onChange={handleChange} />
+      </label>;
+  });
+
   let testmonials = resumeData.testimonials.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
@@ -262,6 +272,8 @@ const ResumeForm = () => {
         <button onClick={() => setType("t")}>Testimonials</button>
 
         <h4>Portfolio</h4>
+
+        {portfolio}
         
 
         {/* Add more fields as needed */}
