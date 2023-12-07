@@ -8,7 +8,7 @@ let resumeData = {
   email: "ianwarsyed@gmail.com",
   whatsapp: "+923409096374",
   roleDescription:
-    "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "I like dabbling in various parts of Web Development and like to learn about advance technologies, and play games in my free time.",
 
   aboutme:
     "Greetings! I am Syed Anwar, a proficient full-stack web developer with extensive expertise in JavaScript, ReactJS, and Node/ExpressJS. Moreover, I'm passionate about building softwares and functional web applications. I take pride in developing scalable and efficient code that adheres to industry standards and best practices. Besides my tech pursuits, I enjoy playing sports and believe in maintaining a healthy body and mind. I'm eager to work on challenging projects and collaborate with talented individuals. Let's connect!",
