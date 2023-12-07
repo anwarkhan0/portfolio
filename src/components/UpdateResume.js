@@ -7,6 +7,27 @@ import "./updateResume.css";
 const ResumeForm = () => {
   const [type, setType] = useState("p");
   const [formData, setFormData] = useState(resumeData);
+  const [personalInfo, setPersonalInfo] = ({
+    imagebaseurl: resumeData.imagebaseurl,
+    name: resumeData.name,
+    role: resumeData.role,
+    linkedinId: resumeData.linkedinId,
+    // "skypeid": "Your skypeid",
+    email: resumeData.email,
+    whatsapp: resumeData.whatsapp,
+    roleDescription: resumeData.roleDescription,
+    aboutme: resumeData.aboutme,
+    address: resumeData.address,
+    website: resumeData.website,
+  });
+
+  const [socialLinks, setSocialLinks] = useState(resumeData.socialLinks);
+
+  const [education, setEducation] = useState(resumeData.education);
+
+  const [work, setWork] = useState(resumeData.work);
+
+  const [skills, setSkills] = useState(resumeData.skills);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -15,6 +36,8 @@ const ResumeForm = () => {
       ...prevData,
       [name]: value,
     }));
+
+    
   };
 
   const handleSubmit = (e) => {
@@ -23,7 +46,7 @@ const ResumeForm = () => {
     console.log("Form submitted with data:", formData);
   };
 
-  let socialLinks = resumeData.socialLinks.map((el) => {
+  let socialLinksBlock = resumeData.socialLinks.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
         <input type="hidden" value={el.name} name={el.name} />
@@ -31,7 +54,7 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let education = resumeData.education.map((el) => {
+  let educationBlock = resumeData.education.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.UniversityName}:</span>
         <input type="hidden" value={el.UniversityName} name={el.UniversityName} />
@@ -41,7 +64,7 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let work = resumeData.work.map((el) => {
+  let workBlock = resumeData.work.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.CompanyName}:</span>
         <input type="hidden" value={el.CompanyName} name={el.CompanyName} />
@@ -52,14 +75,14 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let skills = resumeData.skills.map( el => {
+  let skillsBlock = resumeData.skills.map( el => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.skillname}:</span>
         <input type="text" value={el.skillname} name={el.skillname} />
       </label>;
   })
 
-   let portfolio = resumeData.portfolio.map((el) => {
+   let portfolioBlock = resumeData.portfolio.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
         <input type="hidden" value={el.name} name={el.name} />
@@ -69,7 +92,7 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let testmonials = resumeData.testimonials.map((el) => {
+  let testmonialsBlock = resumeData.testimonials.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
         <input type="hidden" value={el.name} name={el.name} />
@@ -175,7 +198,7 @@ const ResumeForm = () => {
 
         <h4>Social Links</h4>
 
-        {socialLinks}
+        {socialLinksBlock}
         
 
         {/* Add more fields as needed */}
@@ -200,7 +223,7 @@ const ResumeForm = () => {
 
         <h4>Education</h4>
         
-        {education}
+        {educationBlock}
 
         {/* Add more fields as needed */}
         <button
@@ -224,7 +247,7 @@ const ResumeForm = () => {
 
         <h4>Work</h4>
         
-        {work}
+        {workBlock}
 
         {/* Add more fields as needed */}
         <button
@@ -249,7 +272,7 @@ const ResumeForm = () => {
         <h4>Skills</h4>
         
 
-        {skills}
+        {skillsBlock}
 
         {/* Add more fields as needed */}
         <button
@@ -273,7 +296,7 @@ const ResumeForm = () => {
 
         <h4>Portfolio</h4>
 
-        {portfolio}
+        {portfolioBlock}
         
 
         {/* Add more fields as needed */}
@@ -299,7 +322,7 @@ const ResumeForm = () => {
         <h4>Testimonials</h4>
         
 
-        { testmonials }
+        { testmonialsBlock }
 
         {/* Add more fields as needed */}
         <button
