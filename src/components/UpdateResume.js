@@ -7,19 +7,19 @@ import "./updateResume.css";
 const ResumeForm = () => {
   const [type, setType] = useState("p");
   const [formData, setFormData] = useState(resumeData);
-  const [personalInfo, setPersonalInfo] = ({
-    imagebaseurl: resumeData.imagebaseurl,
-    name: resumeData.name,
-    role: resumeData.role,
-    linkedinId: resumeData.linkedinId,
-    // "skypeid": "Your skypeid",
-    email: resumeData.email,
-    whatsapp: resumeData.whatsapp,
-    roleDescription: resumeData.roleDescription,
-    aboutme: resumeData.aboutme,
-    address: resumeData.address,
-    website: resumeData.website,
-  });
+  // const [personalInfo, setPersonalInfo] = ({
+  //   imagebaseurl: resumeData.imagebaseurl,
+  //   name: resumeData.name,
+  //   role: resumeData.role,
+  //   linkedinId: resumeData.linkedinId,
+  //   // "skypeid": "Your skypeid",
+  //   email: resumeData.email,
+  //   whatsapp: resumeData.whatsapp,
+  //   roleDescription: resumeData.roleDescription,
+  //   aboutme: resumeData.aboutme,
+  //   address: resumeData.address,
+  //   website: resumeData.website,
+  // });
 
   const [socialLinks, setSocialLinks] = useState(resumeData.socialLinks);
 
@@ -28,6 +28,10 @@ const ResumeForm = () => {
   const [work, setWork] = useState(resumeData.work);
 
   const [skills, setSkills] = useState(resumeData.skills);
+
+  const [portfolio, setPortfolio] = useState(resumeData.portfolio);
+
+  const [testimonials, setTestimonials] = useState(resumeData.testimonials);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -46,15 +50,15 @@ const ResumeForm = () => {
     console.log("Form submitted with data:", formData);
   };
 
-  let socialLinksBlock = resumeData.socialLinks.map((el) => {
+  let socialLinksBlock = socialLinks.map((el, i) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
-        <input type="hidden" value={el.name} name={el.name} />
+        <input type="hidden" value={i} name="index" />
         <input type="text" name="url" value={el.url} onChange={handleChange} />
       </label>;
   });
 
-  let educationBlock = resumeData.education.map((el) => {
+  let educationBlock = education.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.UniversityName}:</span>
         <input type="hidden" value={el.UniversityName} name={el.UniversityName} />
@@ -64,7 +68,7 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let workBlock = resumeData.work.map((el) => {
+  let workBlock = work.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.CompanyName}:</span>
         <input type="hidden" value={el.CompanyName} name={el.CompanyName} />
@@ -75,14 +79,14 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let skillsBlock = resumeData.skills.map( el => {
+  let skillsBlock = skills.map( el => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.skillname}:</span>
         <input type="text" value={el.skillname} name={el.skillname} />
       </label>;
   })
 
-   let portfolioBlock = resumeData.portfolio.map((el) => {
+   let portfolioBlock = portfolio.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
         <input type="hidden" value={el.name} name={el.name} />
@@ -92,7 +96,7 @@ const ResumeForm = () => {
       </label>;
   });
 
-  let testmonialsBlock = resumeData.testimonials.map((el) => {
+  let testmonialsBlock = testimonials.map((el) => {
     return <label className="block mb-4">
         <span className="text-gray-700">{el.name}:</span>
         <input type="hidden" value={el.name} name={el.name} />

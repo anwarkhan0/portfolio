@@ -41,13 +41,13 @@ let resumeData = {
       YearOfPassing: "2020",
       // "Achievements":"Some Achievements"
     },
-    // {
-    //   "UniversityName":"Some University",
-    //   "specialization":"Some specialization",
-    //   "MonthOfPassing":"Jan",
-    //   "YearOfPassing":"2018",
-    //   "Achievements":"Some Achievements"
-    // }
+    {
+      "UniversityName":"Alnafi Academy",
+      "specialization":"Diploma in Cloud Security",
+      "MonthOfPassing":"",
+      "YearOfPassing":"Present",
+      // "Achievements":"Some Achievements"
+    }
   ],
   work: [
     {
