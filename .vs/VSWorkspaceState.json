@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\view"
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\view",
+  "SelectedNode": "\\src\\components\\UpdateResume.js",
   "PreviewInSolutionExplorer": false
 }
