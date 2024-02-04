@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import resumeData from "../resumeData";
+import resumeData from "../resumeData-bkp";
 
 import UpdateNavbar from "./UpdateNavbar";
 import "./updateResume.css";
@@ -86,6 +86,14 @@ const ResumeForm = () => {
     e.preventDefault();
     // Handle the form submission, e.g., send data to the server
     console.log("Form submitted with data:", formData);
+    const jsonStr = JSON.stringify(formData, null, 2); // Indent for readability
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "resumeData.json";
+    link.click();
+    alert('data submitted')
   };
 
   let socialLinksBlock = socialLinks.map((el, i) => {
