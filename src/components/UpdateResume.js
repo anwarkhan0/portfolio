@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import resumeData from "../resumeData-bkp";
+import resumeData from "../resumeData.json";
 
 import UpdateNavbar from "./UpdateNavbar";
 import "./updateResume.css";

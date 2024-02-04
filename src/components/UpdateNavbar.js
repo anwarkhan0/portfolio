@@ -11,6 +11,11 @@ const UpdateNavbar = ({type, setType }) => {
         Hide navigation
       </a>
       <ul id="nav" className="nav">
+        <li className="current">
+          <a className="smoothscroll" href="/" onClick={()=> window.location.href = '/'}>
+            Home-Page
+          </a>
+        </li>
         <li className={type === 'p' ? "current" : ""}>
           <a className="smoothscroll" onClick={() => setType("p")} href="#">
             Personal Info

@@ -11,8 +11,10 @@ import resumeData from "./resumeData.json";
 
 import UpdateResume from "./components/UpdateResume";
 
-class App extends Component {
-  render() {
+const App = ()=> {
+
+  const isDevMode = process.env.NODE_ENV === 'development';
+
     return (
       <Router>
         <Routes>
@@ -30,15 +32,13 @@ class App extends Component {
               </div>
             }
           />
-          <Route path="/update-resume" element={
-            
-              <UpdateResume />
-            
-          } />
+
+          {isDevMode && <Route path="/update-resume" element={<UpdateResume />} />}
+          
         </Routes>
       </Router>
     );
-  }
+
 }
 
 export default App;
