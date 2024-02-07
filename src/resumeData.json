@@ -86,22 +86,22 @@
   "portfolio": [
     {
       "name": "Bizroutes",
-      "description": "web app.",
+      "description": "Developed AI based scraper for this site which fetch different route information using nodejs, chatgpt.",
       "imgurl": "images/portfolio/bizroutes.png"
     },
     {
       "name": "The Green Heights",
-      "description": "Web app.",
+      "description": "Developed this website for my client who is the owner of greenheights.",
       "imgurl": "images/portfolio/greenheights.png"
     },
     {
       "name": "Menulist Swat",
-      "description": "Web app.",
+      "description": "Menulist is web application for fast food.",
       "imgurl": "images/portfolio/menulist.png"
     },
     {
       "name": "Blue logoon",
-      "description": "Web app.",
+      "description": "This a theme provided by client which i was responsible for customizing according to client needs have worked on different frontend features.",
       "imgurl": "images/portfolio/bluelgn.png"
     }
   ],

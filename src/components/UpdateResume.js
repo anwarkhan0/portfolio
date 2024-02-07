@@ -122,6 +122,7 @@ const ResumeForm = () => {
       </label>
     );
   });
+  
 
   let educationBlock = education.map((el, i) => {
     return (
