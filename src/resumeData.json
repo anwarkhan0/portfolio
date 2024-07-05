@@ -5,8 +5,8 @@
   "linkedinId": "https://www.linkedin.com/in/syed-anwar-4017831a4/",
   "email": "ianwarsyed@gmail.com",
   "whatsapp": "+923409096374",
-  "roleDescription": "I like dabbling in various parts of Web Development and like to learn about advance technologies, and play games in my free time.",
-  "aboutme": "Greetings! I am Syed Anwar, a proficient full-stack web developer with extensive expertise in JavaScript, ReactJS, and Node/ExpressJS. Moreover, I'm passionate about building softwares and functional web applications. I take pride in developing scalable and efficient code that adheres to industry standards and best practices. Besides my tech pursuits, I enjoy playing sports and believe in maintaining a healthy body and mind. I'm eager to work on challenging projects and collaborate with talented individuals. Let's connect!",
+  "roleDescription": "I am a Developer and Linux Admin. I enjoy exploring various aspects of web development and continuously learning about advanced technologies like AI and Cyber Security. In my free time, I like to play games.",
+  "aboutme": "Greetings! I am Syed Anwar, a proficient developer with extensive expertise in JavaScript, ReactJS, and Node/ExpressJS. Moreover, I'm passionate about building softwares and functional web applications. I take pride in developing scalable and efficient code that adheres to industry standards and best practices. Besides my tech pursuits, I enjoy playing sports and believe in maintaining a healthy body and mind. I'm eager to work on challenging projects and collaborate with talented individuals. Let's connect!",
   "address": "Swat, KPK, Pakistan",
   "website": "anwarsyed.com",
   "socialLinks": [
@@ -52,7 +52,7 @@
       "CompanyName": "The Pixlium Devs",
       "specialization": "Web Developer",
       "MonthOfLeaving": "May",
-      "YearOfLeaving": "2021 - Present",
+      "YearOfLeaving": "2021 - 2023",
       "Achievements": "As a Web Developer at the Pixlium Devs, I actively contributed to the design, development, and maintenance of various web applications and software projects. Leveraging my expertise in technologies such as React, Node.js, Express.js, and other web technologies, I participated in the entire development lifecycle, from requirement analysis and technical design to implementation and deployment. I collaborated with cross-functional teams to ensure seamless integration of front-end and back-end components, and regularly engaged in code reviews and testing to deliver high-quality, bug-free solutions. Additionally, I played a key role in optimizing application performance, troubleshooting issues, and implementing security measures to safeguard data and ensure a smooth user experience."
     }
   ],
@@ -103,16 +103,25 @@
       "name": "Blue logoon",
       "description": "This a theme provided by client which i was responsible for customizing according to client needs have worked on different frontend features.",
       "imgurl": "images/portfolio/bluelgn.png"
+    },
+    {
+      "name": "Swat Hamsafars Travel Agency",
+      "description": "Swat Hamsafars are tour operators which offer travel packages, destinations, and booking options. Site functionalities include Destination Listings, Package Details, Booking System, User Accounts, Payment Integration, Customer Reviews, Blog.",
+      "imgurl": "images/portfolio/swatHamsafars.png"
     }
   ],
   "testimonials": [
     {
       "description": "I am extremely impressed with the work done by Syed Anwar. He was able to turn our ideas into a fully functional and visually stunning website. He was easy to work with and always made themselves available to answer any questions we had. I highly recommend Syed Anwar to anyone in need of a skilled and professional web developer.",
-      "name": "Mujahid Hussein"
+      "name": "Engr Mujahid Hussein"
     },
     {
-      "description": "Working with Syed Anwar has been an absolute pleasure. From start to finish, He provided excellent communication and delivered exactly what we needed for our website.",
+      "description": "Working with Syed Anwar was a good experience. From start to finish, He provided excellent Services and delivered exactly what we needed for our website.",
       "name": "Asif Khan"
+    },
+    {
+      "description": "We are extremely pleased with the outcome and would highly recommend Syed Anwar Khan for any web development projects. His skills, professionalism, and dedication made a significant positive impact on our project. He needs a little bit work on his communication apart from that overall experience was good.",
+      "name": "Taro Yamada"
     }
   ]
 }
