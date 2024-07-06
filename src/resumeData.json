@@ -80,7 +80,7 @@
       "skillname": "MONGODB"
     },
     {
-      "skillname": "Linux"
+      "skillname": "Linux Administration"
     }
   ],
   "portfolio": [
@@ -108,6 +108,11 @@
       "name": "Swat Hamsafars Travel Agency",
       "description": "Swat Hamsafars are tour operators which offer travel packages, destinations, and booking options. Site functionalities include Destination Listings, Package Details, Booking System, User Accounts, Payment Integration, Customer Reviews, Blog.",
       "imgurl": "images/portfolio/swatHamsafars.png"
+    },
+    {
+      "name": "Al-Muqarnas Construction and Consultancy",
+      "description": "I have worked with Almuqarnas Construction Company and Consultancy on a comprehensive redesign and development of their corporate website. This project aimed to enhance the company’s online presence, improve user experience, and showcase their extensive portfolio of construction and consultancy projects.",
+      "imgurl": "images/portfolio/almuqarnas.png"
     }
   ],
   "testimonials": [
